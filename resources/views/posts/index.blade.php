@@ -12,6 +12,8 @@
                     <div class="col-md-8"> 
                         <div class="card-body">          
                             <h3 class="card-title"><a href="/posts/{{$item->id}}"> {{$item->title}}</a></h3>
+                            <p class="card-text">Click on the <strong>Title</strong> to view this Post. </p>
+                            <hr>
                             <p class="card-text"><small class="text-muted">Written on {{$item->created_at}} by {{$item->user->name}}</small></p>
                         </div>
                     </div>
