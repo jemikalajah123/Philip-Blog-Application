@@ -7,7 +7,7 @@
             <div class="card mb-3">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img style="width: 100%" src="/storage/cover_images/{{$item->cover_image}}">
+                        <img style="width: 100%" src="/storage/cover_images/blog.jpg">
                     </div>
                     <div class="col-md-8"> 
                         <div class="card-body">          
