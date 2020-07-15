@@ -7,7 +7,9 @@
         <p>See the latest blog post <a class="btn btn-success btn-sm" href="/posts" role="button">Here</a></p>
         <p>Your first or next Blog post experience begins after a One minute registration. Please your feedback would be greatly appreciated.
         </p>
-        <p><a class="btn btn-primary btn-lg" href="/login" role="button">Login</a> <a class="btn btn-success btn-lg" href="/register" role="button">Register</a></p>
+        @if (Auth::guest())
+            <p><a class="btn btn-primary btn-lg" href="/login" role="button">Login</a> <a class="btn btn-success btn-lg" href="/register" role="button">Register</a></p>
+        @endif
     </div>
 @endsection 
 
