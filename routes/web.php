@@ -17,8 +17,8 @@ Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
 Route::get('/services', 'PagesController@services');
 
-Route::resource('posts', 'PostController');
-Auth::routes();
+Route::resource('posts', 'PostController')->middleware('verified');;
+Auth::routes(['verify' => true]);
 
 Route::get('/dashboard', 'DashboardController@index');
 
